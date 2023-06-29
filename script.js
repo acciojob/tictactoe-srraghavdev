@@ -63,7 +63,7 @@ function checkforwin(){
 	const el9= document.getElementById("9")
 	let arr=[]
 	arr.push([el1.innerText,el2.innerText,el3.innerText])
-	arr.push([el4.innerText,el5.innerText,el6.innerText])
+	arr.push([el6.innerText,el5.innerText,el4.innerText])
 	arr.push([el7.innerText,el8.innerText,el9.innerText])
 	const mess= document.getElementsByClassName("message")[0]
 	if((arr[0][0]==="x" &&arr[0][1]==="x" &&arr[0][2]==="x") || (arr[0][0]==="o" &&arr[0][1]==="o" &&arr[0][2]==="o")){
