@@ -42,11 +42,11 @@ function populate(obj){
 	let player1
 	if(count%2===0){
 		mess.innerText=`${prr[0]}, you're up`
-		obj.target.innerText="O"
+		obj.target.innerText="o"
 	}
 	else{
 		mess.innerText=`${prr[1]}, you're up`
-		obj.target.innerText="X"
+		obj.target.innerText="x"
 	}
 	count++
 	const element = document.getElementById(obj.target.id)
@@ -67,75 +67,75 @@ function checkforwin(){
 	arr.push([el4.innerText,el5.innerText,el6.innerText])
 	arr.push([el7.innerText,el8.innerText,el9.innerText])
 	const mess= document.getElementsByClassName("message")[0]
-	if((arr[0][0]==="X" &&arr[0][1]==="X" &&arr[0][2]==="X") || (arr[0][0]==="O" &&arr[0][1]==="O" &&arr[0][2]==="O")){
+	if((arr[0][0]==="x" &&arr[0][1]==="x" &&arr[0][2]==="x") || (arr[0][0]==="o" &&arr[0][1]==="o" &&arr[0][2]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[1][0]==="X" &&arr[1][1]==="X" &&arr[1][2]==="X") || (arr[1][0]==="O" &&arr[1][1]==="O" &&arr[1][2]==="O")){
+	if((arr[1][0]==="x" &&arr[1][1]==="x" &&arr[1][2]==="x") || (arr[1][0]==="o" &&arr[1][1]==="o" &&arr[1][2]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won1`
 		}
 		return
 	}
-	if((arr[2][0]==="X" &&arr[2][1]==="X" &&arr[2][2]==="X") || (arr[2][0]==="O" &&arr[2][1]==="O" &&arr[2][2]==="O")){
+	if((arr[2][0]==="x" &&arr[2][1]==="x" &&arr[2][2]==="x") || (arr[2][0]==="o" &&arr[2][1]==="o" &&arr[2][2]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[0][0]==="X" &&arr[1][0]==="X" &&arr[2][0]==="X") || (arr[0][0]==="O" &&arr[1][0]==="O" &&arr[2][0]==="O")){
+	if((arr[0][0]==="x" &&arr[1][0]==="x" &&arr[2][0]==="x") || (arr[0][0]==="o" &&arr[1][0]==="o" &&arr[2][0]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[0][1]==="X" &&arr[1][1]==="X" &&arr[2][1]==="X") || (arr[0][1]==="O" &&arr[1][1]==="O" &&arr[2][1]==="O")){
+	if((arr[0][1]==="x" &&arr[1][1]==="x" &&arr[2][1]==="x") || (arr[0][1]==="o" &&arr[1][1]==="o" &&arr[2][1]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[0][2]==="X" &&arr[1][2]==="X" &&arr[2][2]==="X") || (arr[0][2]==="O" &&arr[1][2]==="O" &&arr[2][2]==="O")){
+	if((arr[0][2]==="x" &&arr[1][2]==="x" &&arr[2][2]==="x") || (arr[0][2]==="o" &&arr[1][2]==="o" &&arr[2][2]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[0][0]==="X" &&arr[1][1]==="X" &&arr[2][2]==="X") || (arr[0][0]==="O" &&arr[1][1]==="O" &&arr[2][2]==="O")){
+	if((arr[0][0]==="x" &&arr[1][1]==="x" &&arr[2][2]==="x") || (arr[0][0]==="o" &&arr[1][1]==="o" &&arr[2][2]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
-	if((arr[0][2]==="X" &&arr[1][2]==="X" &&arr[2][0]==="X") || (arr[0][2]==="O" &&arr[1][1]==="O" &&arr[2][0]==="O")){
+	if((arr[0][2]==="x" &&arr[1][2]==="x" &&arr[2][0]==="x") || (arr[0][2]==="o" &&arr[1][1]==="o" &&arr[2][0]==="o")){
 		if(count%2===0){
-			mess.innerText=`${prr[0]}, congratulations you won`
+			mess.innerText=`${prr[0]} congratulations you won!`
 		}
 		else{
-			mess.innerText=`${prr[1]}, congratulations you won`
+			mess.innerText=`${prr[1]} congratulations you won!`
 		}
 		return
 	}
