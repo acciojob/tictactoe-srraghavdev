@@ -36,7 +36,7 @@ function populate(obj){
 		return
 	}
 	const mess= document.getElementsByClassName("message")[0]
-	if(mess.innerText===`${prr[1]}, congratulations you won` || mess.innerText===`${prr[0]}, congratulations you won`){
+	if(mess.innerText===`${prr[1]} congratulations you won!` || mess.innerText===`${prr[0]} congratulations you won!`){
 		return
 	}
 	let player1
