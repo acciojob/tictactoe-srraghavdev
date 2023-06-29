@@ -39,7 +39,6 @@ function populate(obj){
 	if(mess.innerText===`${prr[1]} congratulations you won!` || mess.innerText===`${prr[0]} congratulations you won!`){
 		return
 	}
-	let player1
 	if(count%2===0){
 		mess.innerText=`${prr[0]}, you're up`
 		obj.target.innerText="o"
