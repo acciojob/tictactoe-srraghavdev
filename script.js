@@ -2,8 +2,8 @@ let count=1
 let prr=[]
 function dynamic(){
 	const parent = document.getElementsByClassName("container")[0]
-	const player1ref = document.getElementById("player-1")
-	const player2ref = document.getElementById("player-2")
+	const player1ref = document.getElementById("player1")
+	const player2ref = document.getElementById("player2")
 	const player1= player1ref.value
 	const player2= player2ref.value
 	const landingpageref = document.getElementById("landingpage")
